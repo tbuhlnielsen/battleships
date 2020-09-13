@@ -1,0 +1,58 @@
+BATTLESHIPS
+
+A board game for you and your computer.
+
+1. Description
+
+Each player has five ships: a carrier, a battleship, a destroyer, a
+submarine, and a patrol boat. At the start of the game, the players
+place their pieces on a 10-by-10 grid; they occupy 5, 4, 3, 3, and 
+2 squares respectively, and each must be placed in a line. Below is 
+an example of a valid setup.
+
+    a   b   c   d   e   f   g   h   i   j  
+  +---+---+---+---+---+---+---+---+---+---+
+0 |   |   |   |   |   |   | D | D | D |   |
+  +---+---+---+---+---+---+---+---+---+---+
+1 |   |   |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+2 | S |   |   |   | C |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+3 | S |   |   |   | C |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+4 | S |   |   |   | C |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+5 |   |   |   |   | C | P | P |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+6 |   |   |   |   | C |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+7 |   |   |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+8 |   | B | B | B | B |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+9 |   |   |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+---+---+
+
+Once both players have chosen positions for their ships, they take 
+it in turns to fire shots at their opponent's ships. On your turn, 
+you announce a square on which you think your opponent has a ship. 
+Your opponent then replies with "hit" or "miss". The results of your 
+previous guesses are recorded on a second 10-by-10 grid. 
+
+The game ends when one player's fleet has been sunk (every square of 
+every one of their ships has been hit).
+
+
+2. Building
+
+A Makefile for macOS (tested on Catalina) is included in the 
+project's root directory.
+
+
+3. To do
+
+* Add more detail to Game::print_summary().
+* Allow user to enter keywords "ships", "undo" and "quit".
+* Systematic computer AI.
+* Multiplayer?
+* Replace static casts with function.
